@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anima</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- 
+    1. Рисуем сетку сайта в пэинте
+    2. Воспроизводим сетку сайта в верстке, настраиваем количество и размер колонок
+    3. Даем названия крупнм блокам, наполняем тестовым контентом, выделяем общие стили
+    4. Наполняем реальным контентом, продолжаем выделять общие стили
+    5. Стилизация элементов
+  -->
+
+
+  <header class="header bgBlack white" id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="logoToggleBox">
+            <div class="logo">
+              <a href="#section-carousel">
+                <img class="logoIcon img-fluid" src="icon/HorizonLogo 1.png" alt="Logo"></a>
+            </div>
+            <div class="menuToggle menuToggleMain">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="headerWrp">
+            <div class="headerContacts">
+              <a href="error.html"><img class="WhatsAppLogo img-fluid" src="icon/whatsApp.png" alt="WhatsApp"></a>
+              <div class="phoneNumber">
+                <img class="phoneLogo img-fluid" src="icon/phone.png" alt="phone">
+                <a class="number" href="tel:+79995423583">+7 (999) 542-35-83</a>
+              </div>
+              <img class="group" src="icon/Group.png" alt="group">
+            </div>
+
+            <nav class="headerMenu headerMenuMainPage">
+              <ul class="menuList">
+                <li class="menuItem"><a class="menuLink" href="#naturalStoneExamples">каталог</a></li>
+                <li class="menuItem"><a class="menuLink" href="#promotions">акции</a></li>
+                <li class="menuItem"><a class="menuLink" href="error.html">блог</a></li>
+                <li class="menuItem"><a class="menuLink" href="error.html">сотрудничество</a></li>
+                <li class="menuItem"><a class="menuLink" href="#questionSection">оплата и доставка</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="section-carousel" class="section-carousel bgBlack white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="slider">
+            <div class="slider-line">
+
+              <div class="slide 1" data-index="1">
+
+                <div class="carousel-btn carousel-btn-next">
+                  <button class="btn-prev">
+                    <img class="imgPrev" src="icon/next.svg" alt="arrow prev">
+                  </button>
+                </div>
+                <div class="carousel-btn carousel-btn-prev">
+                  <button class="btn-next">
+                    <img class="imgNext" src="icon/pref.svg" alt="arrow next">
+                  </button>
+                </div>
+                <div class="slideInfo bgBlack white">
+                  <p class="slideText">
+                    камень с душой
+                  </p>
+                  <h1 class="slideTitle">каменные изделия <br> <span class="green">
+                      для вашего дома
+                    </span> </h1>
+                  <div class="slideBtns">
+                    <a class="slideBtnGetCost bgGreen" href="error.html">
+                      рассчитать стоимость
+                    </a>
+                    <a class="feedbackBtn" href="error.html">
+                      связаться с нами
+                    </a>
+                  </div>
+                </div>
+                <div class="slideImg">
+                  <img class="img-fluid" src="img/slide_1.jpg" alt="picture">
+                </div>
+              </div>
+
+
+
+
+              <div class="slide 2" data-index="2">
+                <div class="carousel-btn carousel-btn-next">
+                  <button class="btn-prev">
+                    <img class="imgPrev" src="icon/next.svg" alt="arrow prev">
+                  </button>
+                </div>
+                <div class="carousel-btn carousel-btn-prev">
+                  <button class="btn-next">
+                    <img class="imgNext" src="icon/pref.svg" alt="arrow next">
+                  </button>
+                </div>
+                <div class="slideInfo bgBlack white">
+                  <p class="slideText">
+                    камень с душой
+                  </p>
+                  <h1 class="slideTitle">каменные изделия <span class="green">
+                      для вашего дома
+                    </span> </h1>
+                  <div class="slideBtns">
+                    <a class="slideBtnGetCost bgGreen" href="error.html">
+                      рассчитать стоимость
+                    </a>
+                    <a class="feedbackBtn" href="error.html">
+                      связаться с нами
+                    </a>
+                  </div>
+                </div>
+
+                <div class="slideImg">
+                  <img class="img-fluid" src="img/slide_2.jpg" alt="picture">
+                </div>
+              </div>
+
+
+              <div class="slide 3" data-index="3">
+
+                <div class="carousel-btn carousel-btn-next">
+                  <button class="btn-prev">
+                    <img class="imgPrev" src="icon/next.svg" alt="arrow prev">
+                  </button>
+                </div>
+                <div class="carousel-btn carousel-btn-prev">
+                  <button class="btn-next">
+                    <img class="imgNext" src="icon/pref.svg" alt="arrow next">
+                  </button>
+                </div>
+                <div class="slideInfo bgBlack white">
+                  <p class="slideText">
+                    камень с душой
+                  </p>
+                  <h1 class="slideTitle">каменные изделия <span class="green">
+                      для вашего дома
+                    </span> </h1>
+                  <div class="slideBtns">
+                    <a class="slideBtnGetCost bgGreen" href="error.html">
+                      рассчитать стоимость
+                    </a>
+                    <a class="feedbackBtn" href="error.html">
+                      связаться с нами
+                    </a>
+                  </div>
+                </div>
+
+                <div class="slideImg">
+                  <img class="img-fluid" src="img/slide_3.jpg" alt="picture">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="titleSection advantages bgWhite black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="advantagesTitleBox">
+            <div class="advantagesTitleLine"></div>
+            <h2 class="title advantagesTitle">
+              наши преимущества - <br>ваш результат
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantagesSection bgWhite black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="advantagesTextWrp">
+            <div class="advantagesTextBox">
+              <p class="advantagesText">
+                Новейшее итальянское <br>оборудование Donatoni
+              </p>
+              <div class="moreInfo">
+                <img class="openMoreInfo" src="icon/advantagesArrow.svg" alt="down arrow">
+                <p class="infoNumber bgGreen">01</p>
+                <div class="line"></div>
+              </div>
+              <p class="advantagesTextMore">
+                С его помощью мы производим необычные формы, изготавливаем сложные нестандартные изделия
+              </p>
+            </div>
+            <div class="advantagesTextBox">
+              <p class="advantagesText">
+                Собственное <br> произодство
+              </p>
+              <div class="moreInfo">
+                <img class="openMoreInfo" src="icon/advantagesArrow.svg" alt="down arrow">
+                <p class="infoNumber bgGreen">02</p>
+                <div class="line"></div>
+              </div>
+              <p class="advantagesTextMore">
+                Предлагаем адекватную стоимость, поскольку производим все самостоятельно. Вы можете посетить наше
+                производство, чтобы
+                убедиться в этом
+              </p>
+            </div>
+            <div class="advantagesTextBox">
+              <p class="advantagesText">
+                Широкий ассортимент<br> разнообразных камней
+              </p>
+              <div class="moreInfo">
+                <img class="openMoreInfo" src="icon/advantagesArrow.svg" alt="down arrow">
+                <p class="infoNumber bgGreen">03</p>
+                <div class="line"></div>
+              </div>
+              <p class="advantagesTextMore">
+                Мы предлагаем изделия из более 120 месторождений из Италии, Испании, Индии, Бразилии, Китая, Ирана и др.
+                Но если вам
+                нужно что-то совершенно уникальное - закажем для вас любой камень.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="advantagesImgBox">
+            <img class="advantagesImg img-fluid" src="img/advantagesImg.jpg" alt="advantages photo">
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="advantagesTextWrp secondWrp">
+            <div class="advantagesTextBox">
+              <p class="advantagesText">
+                Изделия <br>
+                из наличия
+              </p>
+              <div class="moreInfo">
+                <p class="infoNumber bgGreen">04</p>
+                <div class="lineSecond line"></div>
+                <img class="openMoreInfo" src="icon/advantagesArrow.svg" alt="down arrow">
+              </div>
+              <p class="advantagesTextMore">
+                С его помощью мы производим необычные формы, изготавливаем сложные нестандартные изделия
+              </p>
+            </div>
+            <div class="advantagesTextBox">
+              <p class="advantagesText">
+                Работаем <br> под ключ
+              </p>
+              <div class="moreInfo">
+                <p class="infoNumber bgGreen">05</p>
+                <div class="lineSecond line"></div>
+                <img class="openMoreInfo" src="icon/advantagesArrow.svg" alt="down arrow">
+              </div>
+              <p class="advantagesTextMore">
+                Предлагаем адекватную стоимость, поскольку производим все самостоятельно. Вы можете посетить наше
+                производство, чтобы
+                убедиться в этом
+              </p>
+            </div>
+            <div class="advantagesTextBox">
+              <p class="advantagesText">
+                Консультации по уходу <br> за иделием из камня
+              </p>
+              <div class="moreInfo">
+                <p class="infoNumber bgGreen">06</p>
+                <div class="lineSecond line"></div>
+                <img class="openMoreInfo" src="icon/advantagesArrow.svg" alt="down arrow">
+              </div>
+              <p class="advantagesTextMore">
+                Мы предлагаем изделия из более 120 месторождений из Италии, Испании, Индии, Бразилии, Китая, Ирана и др.
+                Но если вам
+                нужно что-то совершенно уникальное - закажем для вас любой камень.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="titleSection naturalStoneExamplesTitle bgWhite black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="naturalStoneTitleBox">
+            <div class="naturalStoneTitleLine"></div>
+            <h2 class="naturalStoneTitle title">
+              Изделия <br>
+              из натурального камня
+            </h2>
+          </div>
+          <div class="naturalStoneLineTitle"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="naturalStoneExamplesSection bgWhite black" id="naturalStoneExamples">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="naturalStoneExamples first-box">
+            <div class="naturalStoneExamplesBox">
+              <img class="img-fluid" src="img/gallery/table.jpg" alt="table">
+              <div class="positionInfo info-first">
+                <a class="naturalStoneExamplesText" href="catalog.html">
+                  столешницы
+                </a>
+              </div>
+            </div>
+            <div class="naturalStoneExamplesBox">
+              <img class="img-fluid" src="img/gallery/windowSiil.jpg" alt="window Siil">
+              <div class="positionInfo info-second">
+                <a class="naturalStoneExamplesText" href="catalog.html">
+                  подоконники
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="naturalStoneExamples second-box">
+            <div class="naturalStoneExamplesBox">
+              <img class="img-fluid" src="img/gallery/sink.jpeg" alt="">
+              <div class="positionInfo info-first">
+                <a class="naturalStoneExamplesText" href="catalog.html">
+                  раковины
+                </a>
+              </div>
+            </div>
+            <div class="naturalStoneExamplesBox">
+              <img class="img-fluid" src="img/gallery/pannel.jpg" alt="">
+              <div class="positionInfo info-second">
+                <a class="naturalStoneExamplesText" href="catalog.html">
+                  панно
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promotionsSection" id="promotions">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="promotionsInfo bgBlack white">
+            <div class="promotionsTitleLine"></div>
+            <h1 class="promotionsTitle">Актуальные акции <br> на <span class="green">
+                НАШУ ПРОДУКЦИЮ
+              </span> </h1>
+            <p class="promotionsText">
+              Учитывая ключевые сценарии поведения, обучения кадров влечет за собой процесс внедрения и модернизации
+              распределения
+            </p>
+            <div class="slideBtns promotionsBtn">
+              <a class="slideBtnGetCost bgGreen" href="#naturalStoneExamples">перейти в каталог</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="cards">
+            <div class="card">
+              <div class="cardImg">
+                <img class="img-fluid" src="img/card.jpg" alt="card">
+              </div>
+              <p class="cardTextPos">
+                Акция
+              </p>
+              <p class="cardText green">
+                Kratki
+              </p>
+              <h2 class="cardTitle">
+                Каминная топка Kratki <br>
+                ZUZIA LPT
+              </h2>
+              <div class="cardPrice">
+                <p class="newPrice green">16 490</p>
+                <p class="oldPrice">20 500</p>
+              </div>
+              <a class="cardBtn bgGreen white" href="card.html">Подробнее</a>
+            </div>
+            <div class="card">
+              <div class="cardImg">
+                <img class="img-fluid" src="img/card.jpg" alt="card">
+              </div>
+              <p class="cardTextPos">
+                Акция
+              </p>
+              <p class="cardText green">
+                Kratki
+              </p>
+              <h2 class="cardTitle">
+                Каминная топка Kratki <br>
+                ZUZIA LPT
+              </h2>
+              <div class="cardPrice">
+                <p class="newPrice green">16 490</p>
+                <p class="oldPrice">20 500</p>
+              </div>
+              <a class="cardBtn bgGreen white" href="card.html">Подробнее</a>
+            </div>
+            <div class="card">
+              <div class="cardImg">
+                <img class="img-fluid" src="img/card.jpg" alt="card">
+              </div>
+              <p class="cardTextPos">
+                Акция
+              </p>
+              <p class="cardText green">
+                Kratki
+              </p>
+              <h2 class="cardTitle">
+                Каминная топка Kratki <br>
+                ZUZIA LPT
+              </h2>
+              <div class="cardPrice">
+                <p class="newPrice green">16 490</p>
+                <p class="oldPrice">20 500</p>
+              </div>
+              <a class="cardBtn bgGreen white" href="card.html">Подробнее</a>
+            </div>
+            <div class="card">
+              <div class="cardImg">
+                <img class="img-fluid" src="img/card.jpg" alt="card">
+              </div>
+              <p class="cardTextPos">
+                Акция
+              </p>
+              <p class="cardText green">
+                Kratki
+              </p>
+              <h2 class="cardTitle">
+                Каминная топка Kratki <br>
+                ZUZIA LPT
+              </h2>
+              <div class="cardPrice">
+                <p class="newPrice green">16 490</p>
+                <p class="oldPrice">20 500</p>
+              </div>
+              <a class="cardBtn bgGreen white" href="card.html">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" titleSection naturalStoneExamplesTitle bgWhite black">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="naturalStoneTitleBox ideasTitleBox">
+            <div class="ideasArrowsBox">
+              <img class="ideasArrow_prev img-fluid" src="icon/Ideas_Prev_arrow.svg" alt="">
+              <img class="ideasArrow_next img-fluid" src="icon/Ideas_Next_arrow.svg" alt="">
+            </div>
+            <div class="naturalStoneTitleLine"></div>
+            <h2 class="naturalStoneTitle title">
+              идеи для <br> вдохновения
+            </h2>
+          </div>
+          <div class="naturalStoneLineTitle"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ideasSection black bgWhite">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+
+          <div class="ideaSlider-container">
+            <div class="ideaSlider" data-index="1">
+              <div class="ideaSlide ideasImgBox block">
+                <img class="img-fluid item1 " src="img/gallery/ideasSection.jpg" alt="">
+                <img class="img-fluid item2 " src="img/gallery/ideas_1.jpg" alt="">
+                <img class="img-fluid item3" src="img/gallery/ideas_2.jpg" alt="">
+                <img class="img-fluid item4" src="img/gallery/ideas_3.jpg" alt="">
+                <img class="img-fluid item5" src="img/gallery/ideas_4.jpg" alt="">
+              </div>
+            </div>
+            <div class="ideaSlider" data-index="1">
+              <div class="ideaSlide ideasImgBox_two">
+                <img class="img-fluid item2_1 " src="img/gallery/ideasSection.jpg" alt="">
+                <img class="img-fluid item2_2 " src="img/gallery/ideas_1.jpg" alt="">
+                <img class="img-fluid item2_3" src="img/gallery/ideas_2.jpg" alt="">
+                <img class="img-fluid item2_4" src="img/gallery/ideas_3.jpg" alt="">
+                <img class="img-fluid item2_5" src="img/gallery/ideas_4.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="paginationLineBox">
+            <!-- <div class="paginationLine active"></div>
+            <div class="paginationLine"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="questionSection white" id="questionSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <div class="question">
+            <h4 class="questionTitle">Остались вопросы? <br> свяжитесь с нами, мы вам поможем!
+            </h4>
+            <p class="questionText">
+              Заполните форму и мы свяжемся с Вами в ближайшее время
+            </p>
+            <form class="questionForm">
+              <div class="submitInfoWrp">
+                <label for="name"></label>
+                <input class="inputName" type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+                <label for="phone"></label>
+                <input class="inputTel" type="tel" id="phone" name="phone" placeholder="Ваш телефон" required>
+
+                <button class="questionBtn bgWhite black" type="submit">Отправить</button>
+              </div>
+
+              <div class="checkboxWrp">
+                <input class="questionInputCheckbox" type="checkbox" id="checkbox" name="agreement" required>
+                <label class="questionCheckbox" for="checkbox">Согласен на обработку форму <a class="formLink"
+                    href="error.html">персональных данных</a> </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-12 col-md-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footerSEction bgBlack white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="logo logoFooter">
+            <img class="logoIcon img-fluid" src="icon/HorizonLogo 1.png" alt="Logo">
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <nav class="footerMenu">
+            <h6 class="footerTitleList ">мЕНЮ</h6>
+            <ul class="footerMenuList footerMenuOpen">
+
+              <li class="footerMenuItem">
+                <a class="footerMenuItemLink" href="error.html">
+                  Delivery & returns
+                </a>
+              </li>
+              <li class="footerMenuItem">
+                <a class="footerMenuItemLink" href="error.html">
+                  FAQ
+                </a>
+              </li>
+              <li class="footerMenuItem">
+                <a class="footerMenuItemLink" href="error.html">
+                  Contacts
+                </a>
+              </li>
+              <li class="footerMenuItem">
+                <a class="footerMenuItemLink" href="error.html">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-12 col-md-3">
+          <nav class="footerMenu">
+            <h6 class="footerTitleList ">каталог</h6>
+            <ul class="footerMenuList footerCatalog">
+              <li class="footerMenuItem">
+                <a class="footerMenuItemLink" href="error.html">
+                  New arrivals
+                </a>
+              </li>
+              <li class="footerMenuItem">
+                <a class="footerMenuItemLink" href="error.html">
+                  Trending now
+                </a>
+              </li>
+              <li class="footerMenuItem">
+                <a class="footerMenuItemLink" href="error.html">
+                  Sales
+                </a>
+              </li>
+              <li class="footerMenuItem">
+                <a class="footerMenuItemLink" href="error.html">
+                  Brands
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-12 col-md-3">
+          <nav class="footerMenu">
+            <h6 class="footerTitleList ">кОНТАКТЫ ДЛЯ СВЯЗИ</h6>
+            <ul class="footerMenuList footerContact">
+              <li class="footerMenuItem white">
+                Телефон:
+                <a class="footernumber" href="tel:+79995423583">+7 (999) 542-35-83</a>
+              </li>
+              <li class="footerMenuItem white">
+                Почта: <a class="footermail" href="mailto:hello@createx.com">hello@createx.com</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footerSocial">
+            <a href="error.html">
+              <img class="img-fluid socialLogo" src="icon/social/Facebook.png" alt="">
+            </a>
+            <a href="error.html">
+              <img class="img-fluid socialLogo" src="icon/social/insta.png" alt="">
+            </a>
+            <a href="error.html">
+              <img class="img-fluid socialLogo" src="icon/social/pinterest.png" alt="">
+            </a>
+            <a href="error.html">
+              <img class="img-fluid socialLogo" src="icon/social/twiter.png" alt="">
+            </a>
+            <a href="error.html">
+              <img class="img-fluid socialLogo" src="icon/social/youtube.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section class="adressSection bgBlack">
+    <div class="backUp bgGreen">
+      <a href="#header">
+        <img src="icon/up.png" alt="arrow up">
+      </a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="adressText"> 674 Gonzales Drive. Washington, PA 15301</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/script.js"></script>
+  <script src="js/toggleMenu.js"></script>
+  <script src="js/sliderCarousel.js"></script>
+</body>
+
+</html>
