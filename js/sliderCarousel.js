@@ -47,4 +47,4 @@ function startSlider(initSlideNumber) {
   sliderInit();
 }
 
-startSlider(1);
+startSlider(3);

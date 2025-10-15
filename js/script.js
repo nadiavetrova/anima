@@ -30,6 +30,37 @@ function startTabSwitch() {
 }
 startTabSwitch();
 
+function showTextOnScroll() {
+  // Проверяем ширину экрана
+  if (window.innerWidth >= 770) return;
+
+  const boxes = document.querySelectorAll('.advantagesTextBox');
+
+  function checkVisibility() {
+    boxes.forEach(box => {
+      const textMore = box.querySelector('.advantagesTextMore');
+      if (!textMore) return;
+
+      const rect = box.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Если элемент появился в зоне видимости (нижняя часть экрана)
+      if (rect.top < windowHeight - 600 && rect.bottom > 0) {
+        textMore.classList.add('activeTabs');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkVisibility);
+  checkVisibility(); // Проверяем сразу при загрузке
+}
+
+showTextOnScroll();
+
+
+
+
+
 function startFooterMenu() {
   const titleList = document.querySelectorAll(".footerTitleList"); // Заголовки
   const menuLists = document.querySelectorAll(".footerMenuList"); // Списки меню
