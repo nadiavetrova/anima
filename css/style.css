@@ -254,7 +254,7 @@ body {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  box-shadow: 0 0 33px 9px #11101008#ffffff08;
+  box-shadow: 0 0 33px 9px #ffffff08;
   z-index: 3;
   padding: 4vw 5vw;
   /* адаптивные отступы */
@@ -576,9 +576,9 @@ body {
 }
 
 .promotionsText {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .promotionsInfo {
@@ -587,17 +587,17 @@ body {
   top: 50%;
   width: 50%;
   height: auto;
-  transform: translate(0, -45%);
-  padding: 30px 0px 30px 40px;
-  box-shadow: 0 0 33px 9px #FFFFFF08;
+  transform: translate(-3%, -45%);
+  padding: 30px 0px 50px 51px;
+  box-shadow: 0 0 33px 9px #00000075;
   z-index: 3;
 }
 
 .promotionsTitle {
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin: 30px 0;
   position: relative;
 }
 
@@ -607,8 +607,8 @@ body {
 
 .promotionsTitleLine {
   position: absolute;
-  top: 5%;
-  left: 0%;
+  top: 9%;
+  left: 5%;
   width: 18%;
   height: 1px;
   background-color: #f9f8f8;
@@ -631,9 +631,18 @@ body {
   border-radius: 0px;
 }
 
-.cardImg {
+.cardImg-box {
   text-align: center;
+  margin-bottom: 20px;
   width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cardTextPos {
@@ -643,7 +652,7 @@ body {
   font-size: 14px;
   background: #ffffff99;
   padding: 5px 20px;
-  transform: translate(-32%, 35%);
+  transform: translate(-13%, 33%);
 }
 
 .cardText {
@@ -688,6 +697,22 @@ body {
 .cardTitle,
 .cardPrice {
   margin-left: 5%;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.cardTitle {
+  display: block;
+  /* или inline-block */
+  width: 100%;
+  /* ограничиваем по ширине карточки */
+  white-space: nowrap;
+  /* запрещаем перенос строк */
+  overflow: hidden;
+  /* скрываем всё, что выходит за пределы */
+  text-overflow: ellipsis;
+  /* добавляем "..." в конце */
+  text-transform: uppercase;
 }
 
 /* ___________ideasSection_______________ */
@@ -950,6 +975,14 @@ body {
 }
 
 @media (max-width: 990px) {
+  .promotionsTitle {
+    font-size: 35px;
+  }
+
+  .promotionsText {
+    font-size: 17px;
+  }
+
   .title {
     font-size: 35px;
   }
@@ -1016,6 +1049,7 @@ body {
   .slideBtnGetCost,
   .feedbackBtn {
     padding: 20px 20px;
+    font-size: 13px;
   }
 }
 
@@ -1235,8 +1269,8 @@ body {
     font-size: 15px;
   }
 
-  .advantagesImgBox {
-    margin-bottom: 100px;
+  .advantagesSection {
+    padding-bottom: 50px;
   }
 }
 
@@ -1270,6 +1304,8 @@ body {
 }
 
 @media (max-width: 500px) {
+
+
   .positionInfo {
     font-size: 16px;
   }
@@ -1281,7 +1317,7 @@ body {
   }
 
   .logo {
-    width: 65%;
+    width: 40%;
   }
 
   .logoToggleBox {
@@ -1310,20 +1346,20 @@ body {
   }
 
   .slideText {
-    font-size: 7px;
+    font-size: 5px;
     margin-bottom: 20px;
   }
 
   .slideTitle {
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 1px;
+    margin-bottom: 5px;
   }
 
   .slideBtnGetCost,
   .feedbackBtn {
     padding: 2px 5px;
-    font-size: 7px;
+    font-size: 5px;
   }
 
   .slideInfo {
