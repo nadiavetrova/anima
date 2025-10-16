@@ -418,7 +418,17 @@ body {
 
 .advantagesImgBox {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
+
+.advantagesImg {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
 
 .advantagesTextWrp {
   display: flex;
@@ -472,7 +482,7 @@ body {
 
 /* _______________naturalStoneExamplesSection___________ */
 .naturalStoneExamplesSection {
-  background: #dfdfdf;
+  background: #e8e8e8;
   padding-bottom: 80px;
 }
 
@@ -507,8 +517,9 @@ body {
   color: white;
   padding: 10px;
   text-align: start;
-  width: 60%;
-  height: 58px;
+
+  width: 70%;
+  padding: 10px 10px;
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 500;
@@ -526,6 +537,32 @@ body {
   right: 0;
 }
 
+.naturalStoneTitleLine {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 15%;
+  height: 1px;
+  background-color: #000;
+}
+
+
+.naturalStoneImg-box {
+  width: 100%;
+  height: 100%;
+  /* ← обязательно! */
+  overflow: hidden;
+}
+
+.naturalStoneImg-box img {
+  width: 100%;
+  height: 100%;
+  /* ← тоже обязательно */
+  object-fit: cover;
+  /* или fill, если хочешь именно растянуть */
+  display: block;
+  /* убирает лишние отступы */
+}
 
 /* _________promotionsSection_______________ */
 
@@ -1101,7 +1138,7 @@ body {
 
   .positionInfo {
     width: 100%;
-    height: 50px;
+    font-size: 22px;
   }
 
   .cards {
@@ -1114,6 +1151,10 @@ body {
   .second-box {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+
+  .naturalStoneExamplesBox {
+    margin-bottom: 50px;
   }
 
   .menuList {
@@ -1200,6 +1241,10 @@ body {
 }
 
 @media (max-width: 630px) {
+  .positionInfo {
+    font-size: 18px;
+  }
+
   .slideTitle {
     font-size: 22px;
     margin-bottom: 15px;
@@ -1225,7 +1270,9 @@ body {
 }
 
 @media (max-width: 500px) {
-
+  .positionInfo {
+    font-size: 16px;
+  }
 
   .menuToggle {
     width: 24px;
@@ -1316,6 +1363,23 @@ body {
 }
 
 @media (max-width: 370px) {
+  .naturalStoneExamplesSection {
+    padding-bottom: 10px;
+  }
+
+  .naturalStoneTitleBox {
+    padding: 10px 0 30px 0;
+  }
+
+  .naturalStoneTitleLine {
+    top: 0%;
+    width: 25%;
+  }
+
+  .positionInfo {
+    font-size: 14px;
+  }
+
   .advantagesText {
     font-size: 19px;
   }
