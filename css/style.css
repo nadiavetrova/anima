@@ -1085,6 +1085,16 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  .advantagesImg {
+    height: 95%;
+  }
+
+  .logo {
+    margin-top: 25px;
+    width: 30%;
+  }
+
   .headerMenuMainPage.active {
     top: 106px;
   }
@@ -1167,7 +1177,6 @@ body {
   .naturalStoneExamplesSection {
     width: 90%;
     margin: 20px;
-    padding-top: 60px;
   }
 
   .positionInfo {
@@ -1304,7 +1313,23 @@ body {
 }
 
 @media (max-width: 500px) {
+  .advantagesText {
+    font-size: 14px;
+  }
 
+  .title {
+    font-size: 16px;
+  }
+
+  .advantagesTextWrp {
+    height: 645px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    /* скрыть всё, что выходит за границы */
+    text-overflow: ellipsis;
+    /* добавить троеточие (…) */
+  }
 
   .positionInfo {
     font-size: 16px;
@@ -1318,6 +1343,7 @@ body {
 
   .logo {
     width: 40%;
+    margin-top: 0px;
   }
 
   .logoToggleBox {
@@ -1398,7 +1424,14 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .advantagesTextWrp {
+    height: 770px;
+  }
+}
+
 @media (max-width: 370px) {
+
   .naturalStoneExamplesSection {
     padding-bottom: 10px;
   }
@@ -1441,11 +1474,15 @@ body {
   }
 
   .advantagesText {
-    font-size: 18px;
+    font-size: 14px;
+  }
+
+  .advantagesTextWrp {
+    height: 600px;
   }
 
   .title {
-    font-size: 27px;
+    font-size: 16px;
   }
 
   .menuToggle {
@@ -1456,5 +1493,9 @@ body {
 
   .headerMenuMainPage.active {
     top: 78px;
+  }
+
+  .advantagesTextMore {
+    font-size: 10px;
   }
 }
