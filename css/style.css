@@ -28,9 +28,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   background-color: #080808;
-}
+} */
 
 .green {
   color: #28553F;
@@ -192,6 +192,7 @@ body {
   background: #28553fe4;
   text-align: center;
   z-index: 99;
+  height: 100%;
 }
 
 .menuItem {
@@ -204,8 +205,10 @@ body {
 
 /* _____________slider________________ */
 .section-carousel {
-  margin: 50px 0;
+  padding: 50px 0;
+  background-color: #080808;
   text-transform: uppercase;
+  margin-top: -1px;
 }
 
 .slider-line {
@@ -565,6 +568,11 @@ body {
 }
 
 /* _________promotionsSection_______________ */
+.promoBtn {
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 300;
+}
 
 .promotionsSection {
   background-size: cover;
@@ -572,7 +580,6 @@ body {
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(0, 0, 0, 0.817), rgba(0, 0, 0, 0.509)), url("../img/promotions.jpg");
   position: relative;
-  margin-left: 50px;
 }
 
 .promotionsText {
@@ -608,7 +615,7 @@ body {
 .promotionsTitleLine {
   position: absolute;
   top: 9%;
-  left: 5%;
+  left: 4%;
   width: 18%;
   height: 1px;
   background-color: #f9f8f8;
@@ -624,6 +631,7 @@ body {
 }
 
 .card {
+  text-align: center;
   padding: 10px;
   position: relative;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
@@ -723,7 +731,7 @@ body {
 .ideasArrowsBox {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 40%;
 }
 
 .ideasArrow_next {
@@ -752,8 +760,14 @@ body {
   grid-template-areas:
     "photo_1 photo_2 photo_3"
     "photo_1 photo_4 photo_5";
-  gap: 55px;
+  gap: 45px;
   max-width: 100%;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .item1 {
@@ -849,7 +863,6 @@ body {
 /* _______________questionSection____________ */
 
 .questionSection {
-  margin-bottom: 20px;
   height: 367px;
   background-size: cover;
   background-position: center;
@@ -858,7 +871,7 @@ body {
 }
 
 .question {
-  padding-top: 70px;
+  padding: 70px 0;
 }
 
 .submitInfoWrp {
@@ -912,7 +925,7 @@ body {
 /* ________________footer____________ */
 .footerSEction {
   border-bottom: 0.1px solid #ffffff34;
-  padding-bottom: 20px;
+  padding: 30px 0;
 }
 
 .footerTitleList {
@@ -940,8 +953,8 @@ body {
 }
 
 .adressSection {
+  margin-top: -2px;
   padding-top: 20px;
-  margin-bottom: 100px;
   position: relative;
 }
 
@@ -962,7 +975,7 @@ body {
   border-radius: 50px;
   text-align: center;
   padding-top: 12px;
-  transform: translate(-40%, 20%);
+  transform: translate(-40%, 10%);
 }
 
 
@@ -1010,7 +1023,7 @@ body {
 
   .ideasImgBox_two,
   .ideasImgBox {
-    gap: 45px;
+    gap: 25px;
   }
 
   .inputName,
@@ -1025,7 +1038,7 @@ body {
   }
 
   .question {
-    padding-top: 10px;
+    padding: 40px 0;
   }
 
   .questionTitle {
@@ -1085,6 +1098,24 @@ body {
 }
 
 @media (max-width: 768px) {
+  .ideasSection {
+    padding: 10px 0 40px 0;
+  }
+
+  .naturalStoneTitleBox,
+  .advantagesTitleBox {
+    padding: 50px 0 0px 0;
+  }
+
+  .paginationLine {
+    width: 30px;
+    height: 2px;
+  }
+
+  .ideasArrow_prev,
+  .ideasArrow_next {
+    padding: 8px 7px;
+  }
 
   .advantagesImg {
     height: 95%;
@@ -1093,10 +1124,6 @@ body {
   .logo {
     margin-top: 25px;
     width: 30%;
-  }
-
-  .headerMenuMainPage.active {
-    top: 106px;
   }
 
   .menuToggle {
@@ -1138,11 +1165,12 @@ body {
 
   .ideasImgBox_two,
   .ideasImgBox {
-    gap: 35px;
+    gap: 15px;
   }
 
   .promotionsSection {
     margin-left: 0px;
+    margin-bottom: 20px;
   }
 
   .promotionsText {
@@ -1154,7 +1182,7 @@ body {
     position: static;
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 20px;
     box-shadow: 0 0 33px 9px #FFFFFF08;
     transform: translate(0, 0);
     margin: 50px 0 20px 0;
@@ -1164,19 +1192,10 @@ body {
     font-size: 24px;
   }
 
-  .promotionsBtn {
-    padding: 10px 20px;
-  }
-
   .promotionsTitleLine {
-    top: 5%;
-    width: 26%;
-    transform: translate(46%, 100%);
-  }
-
-  .naturalStoneExamplesSection {
-    width: 90%;
-    margin: 20px;
+    top: 9%;
+    width: 18%;
+    transform: translate(16%, 100%);
   }
 
   .positionInfo {
@@ -1206,6 +1225,7 @@ body {
   }
 
   .headerContacts {
+    margin-bottom: 10px;
     margin-top: 0;
     justify-content: space-between;
   }
@@ -1266,8 +1286,7 @@ body {
   }
 
   .menuList {
-    font-size: 15px;
-    padding: 80px 0;
+    font-size: 18px;
   }
 
   .advantagesText {
@@ -1313,6 +1332,44 @@ body {
 }
 
 @media (max-width: 500px) {
+
+  .question {
+    padding: 5px 0;
+  }
+
+  .questionTitle {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .questionText {
+    font-size: 14px;
+  }
+
+  .questionCheckbox {
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  .ideasImgBox_two,
+  .ideasImgBox {
+    gap: 11px;
+  }
+
+  .paginationLineBox {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .paginationLine {
+    width: 20px;
+  }
+
+  .ideasArrow_prev,
+  .ideasArrow_next {
+    padding: 6px 5px;
+  }
+
   .advantagesText {
     font-size: 14px;
   }
@@ -1358,7 +1415,6 @@ body {
   .cardTextPos {
     font-size: 22px;
     padding: 5px 30px;
-    transform: translate(-67%, 30%);
   }
 
   .slideImg {
@@ -1431,6 +1487,22 @@ body {
 }
 
 @media (max-width: 370px) {
+  .questionTitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .questionText {
+    font-size: 12px;
+  }
+
+  .questionCheckbox {
+    font-size: 10px;
+  }
+
+  .ideasArrowsBox {
+    top: 10%;
+  }
 
   .naturalStoneExamplesSection {
     padding-bottom: 10px;
@@ -1456,10 +1528,6 @@ body {
   .headerContacts {
     justify-content: center;
     margin-bottom: 10px;
-  }
-
-  .section-carousel {
-    margin: 20px 0;
   }
 
   .menuList {
