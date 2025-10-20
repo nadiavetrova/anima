@@ -1294,7 +1294,7 @@ html {
   }
 
   .advantagesTextMore {
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .advantagesSection {
@@ -1482,7 +1482,14 @@ html {
 
 @media (max-width: 450px) {
   .advantagesTextWrp {
-    height: 770px;
+    height: 600px;
+  }
+
+  .infoNumber {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+    padding-top: 5px;
   }
 }
 
