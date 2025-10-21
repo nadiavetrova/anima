@@ -60,7 +60,6 @@ html {
   color: #282A30;
 }
 
-
 .title {
   font-size: 40px;
   font-weight: 400;
@@ -118,9 +117,6 @@ html {
 }
 
 /* ____________________header______________ */
-
-
-
 .menuList {
   display: flex;
   flex-wrap: wrap;
@@ -298,14 +294,19 @@ html {
   justify-content: space-around;
 }
 
+.promoBtn,
 .slideBtnGetCost,
 .feedbackBtn {
   width: 45%;
-  padding: 20px 30px;
-  text-align: center;
+  height: 40px;
   font-size: 14px;
   font-weight: 200;
   box-shadow: 0 0 33px 9px #08080808;
+  display: flex;
+  align-items: center;
+  /* центр по вертикали */
+  justify-content: center;
+  /* центр по горизонтали */
 }
 
 .feedbackBtn {
@@ -544,11 +545,10 @@ html {
   position: absolute;
   top: 20%;
   left: 0%;
-  width: 15%;
+  width: 10%;
   height: 1px;
   background-color: #000;
 }
-
 
 .naturalStoneImg-box {
   width: 100%;
@@ -568,11 +568,6 @@ html {
 }
 
 /* _________promotionsSection_______________ */
-.promoBtn {
-  padding: 10px 30px;
-  font-size: 20px;
-  font-weight: 300;
-}
 
 .promotionsSection {
   background-size: cover;
@@ -704,7 +699,6 @@ html {
 .cardText,
 .cardTitle,
 .cardPrice {
-  margin-left: 5%;
   margin-bottom: 5px;
   align-items: center;
 }
@@ -978,6 +972,493 @@ html {
   transform: translate(-40%, 10%);
 }
 
+/* ___________card_____________ */
+.cardTitle {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.thumbnail,
+.bigImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article,
+.model {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.article span,
+.model span {
+  font-weight: 400;
+  color: #9C9C9C;
+}
+
+.availableBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.availableText {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.borderCard {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+/* ___________cardInfoMain_________ */
+
+.cardInfoMain {
+  padding: 50px 0;
+}
+
+.cardPriceBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+
+.cardNewPrice {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.cardOldPrice {
+  color: #9C9C9C;
+  font-size: 23px;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.cardDiscount {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 5px;
+}
+
+.withTax {
+  font-size: 12px;
+  color: #9C9C9C;
+  font-weight: 500;
+}
+
+.quantityDoods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.quantityDoodsInput {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+}
+
+.quantityDoodsText {
+  padding-top: 15px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.errorText {
+  padding-top: 15px;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.description {
+  font-size: 17px;
+  font-weight: 400;
+  position: relative;
+  padding-right: 20px;
+}
+
+.descriptionBtnBox {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.descriptionWrp {
+  margin-bottom: 30px;
+}
+
+.descriptionWrp div:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+.descriptionBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.descriptionTitle {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 47px;
+  width: 170px;
+}
+
+.descriptionText {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+.application,
+.consultation {
+  font-size: 14px;
+  padding: 10px 30px;
+  font-weight: 500;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.application {
+  border: 1px solid #CACACA;
+}
+
+.cardBtns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 50px;
+}
+
+/* _____________cardSubTitleSection_________ */
+.cardPayedInfoBtn .hide {
+  display: none;
+}
+
+.cardSubTitleBox {
+  height: 50px;
+  border-bottom: 4px solid #EDF3F3;
+}
+
+.cardSubTitleBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cardSubTitle {
+  padding-right: 20px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 4px solid #28553F;
+}
+
+.cardInfoTextBox {
+  padding: 20px 0 30px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.productInfoText {
+  padding: 10px 0;
+}
+
+.beforeCardSubTitle {
+  padding-left: 30px;
+  position: relative;
+}
+
+.beforeCardSubTitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(0%, 30%);
+  width: 18px;
+  height: 18px;
+  background-image: url('../icon/productInfo.png');
+  background-repeat: no-repeat;
+}
+
+.productInfoText {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.headerMenuCard.active {
+  display: block;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  width: 100%;
+  background: #28553fe4;
+  text-align: center;
+  z-index: 99;
+  height: 100%;
+}
+
+/* ________image-viewer________ */
+.image-viewer {
+  text-align: center;
+}
+
+.thumbnails {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.thumbnail {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* ______________slider_________ */
+.cardSliderSection {
+  padding: 50px 0;
+}
+
+.slideCardsBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cardSlide {
+  justify-content: center !important;
+}
+
+
+.cardCarousel-btn-next {
+  transform: translate(100%, -50%) !important;
+}
+
+.cardCarousel-btn-prev {
+  transform: translate(0%, -50%) !important;
+}
+
+/* _______________________________ */
+
+@media (max-width: 500px) {
+  .cardCarousel-btn-next {
+    transform: translate(0%, -50%) !important;
+  }
+
+  .descriptionTitle {
+    font-size: 17px;
+    line-height: 20px;
+    width: 100px;
+  }
+
+  .descriptionText {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .cardBtns {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .application,
+  .consultation {
+    text-align: center;
+    width: 100%;
+  }
+
+  .cardPriceBox {
+    gap: 10px;
+  }
+
+  .cardDiscount {
+    font-size: 13px;
+    padding: 5px 5px;
+  }
+
+}
+
+/* _________________catalog___________
+ */
+.catalogSortSection {
+  border: 1px solid #E5E5E5;
+}
+
+.sortBox {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.grey {
+  color: #9C9C9C;
+}
+
+.sortList {
+  display: inline-block;
+}
+
+/* __________catalogCards_________ */
+.catalogSection {
+  padding: 20px 0;
+}
+
+.catalogCards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.filter-menu {
+  background-color: #F9F9F9;
+  padding: 10px 10px;
+}
+
+.filter-subtitle::after,
+.filter-title::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  /* Укажите ширину иконки */
+  height: 12px;
+  /* Укажите высоту иконки */
+  background-image: url('../icon/advantagesArrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 8px;
+
+}
+
+.filter-sublist li,
+.filter-subtitle,
+.filter-list li,
+.filter-title {
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.colors {
+  border-bottom: none !important;
+}
+
+.filter-list li a::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  /* Укажите ширину иконки */
+  height: 12px;
+  /* Укажите высоту иконки */
+  background-image: url('../icon/filter-sublist.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 8px;
+
+}
+
+.filter-list li a {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #9C9C9C;
+}
+
+.filter-title,
+.filter-subtitle {
+  font-size: 16px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.filter-list {
+  display: none;
+}
+
+.openfilterList {
+  display: block;
+}
+
+.showMoreCards {
+  text-align: end;
+}
+
+.showMoreCardsBTN {
+  margin-right: 40px;
+  padding: 10px 20px;
+  font-size: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.showMoreCardsBTN::after {
+  content: "";
+  width: 35px;
+  height: 20px;
+  background-image: url('../icon/showMoreCards.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .catalogCards {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 40px;
+  }
+
+  .filter-menu {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .catalogCards {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.headerMenuCatalog.active {
+  display: block;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  width: 100%;
+  background: #28553fe4;
+  text-align: center;
+  z-index: 99;
+}
+
+
+.hide {
+  display: none;
+}
 
 /* _________________adaptive__________
  */
@@ -988,6 +1469,25 @@ html {
 }
 
 @media (max-width: 990px) {
+
+  .inputName,
+  .inputTel {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+
+  .naturalStoneTitleBox,
+  .advantagesTitleBox {
+    padding: 40px 0 10px 0;
+  }
+
+  .catalogCards {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
   .promotionsTitle {
     font-size: 35px;
   }
@@ -1026,15 +1526,9 @@ html {
     gap: 25px;
   }
 
-  .inputName,
-  .inputTel {
-    width: 90%;
-    height: 40px;
-  }
-
   .questionBtn {
-    width: 90%;
-    height: 40px;
+    width: 100%;
+    height: 50px;
   }
 
   .question {
@@ -1061,7 +1555,7 @@ html {
 
   .slideBtnGetCost,
   .feedbackBtn {
-    padding: 20px 20px;
+    height: 30px;
     font-size: 13px;
   }
 }
@@ -1073,12 +1567,6 @@ html {
 
   .slideText {
     font-size: 10px;
-  }
-
-  .slideBtnGetCost,
-  .feedbackBtn {
-    padding: 10px 20px;
-    font-size: 11px;
   }
 
   .carousel-btn-next,
@@ -1104,7 +1592,7 @@ html {
 
   .naturalStoneTitleBox,
   .advantagesTitleBox {
-    padding: 50px 0 0px 0;
+    padding: 20px 0 0px 0;
   }
 
   .paginationLine {
@@ -1130,16 +1618,8 @@ html {
     margin-top: 37px;
   }
 
-
   .backUp {
-    transform: translate(-10%, 20%);
-  }
-
-  .inputName,
-  .inputTel {
-    margin-bottom: 10px;
-    padding-left: 10px;
-    margin-right: 0px;
+    transform: translate(-8%, 3%);
   }
 
   .submitInfoWrp {
@@ -1296,10 +1776,6 @@ html {
   .advantagesTextMore {
     font-size: 11px;
   }
-
-  .advantagesSection {
-    padding-bottom: 50px;
-  }
 }
 
 @media (max-width: 630px) {
@@ -1318,7 +1794,7 @@ html {
 
   .slideBtnGetCost,
   .feedbackBtn {
-    padding: 10px 5px;
+    height: 25px;
     font-size: 10px;
   }
 
@@ -1334,7 +1810,7 @@ html {
 @media (max-width: 500px) {
 
   .question {
-    padding: 5px 0;
+    padding-top: 30px;
   }
 
   .questionTitle {
@@ -1440,7 +1916,7 @@ html {
 
   .slideBtnGetCost,
   .feedbackBtn {
-    padding: 2px 5px;
+    height: 15px;
     font-size: 5px;
   }
 
@@ -1481,6 +1957,45 @@ html {
 }
 
 @media (max-width: 450px) {
+  .cardSliderSection {
+    padding: 10px 0;
+  }
+
+  .cardInfoTextBox {
+    padding: 10px 0 10px 0;
+  }
+
+  .cards {
+    margin: 10px 0;
+  }
+
+  .withTax {
+    line-height: 1px;
+  }
+
+  .cardInfoMain {
+    padding: 10px 0;
+  }
+
+  .article,
+  .model {
+    font-size: 12px;
+    line-height: 3px;
+  }
+
+  .showMoreCardsBTN::after {
+    width: 30px;
+    height: 10px;
+  }
+
+  .showMoreCardsBTN {
+    font-size: 16px;
+  }
+
+  .naturalStoneExamplesSection {
+    padding-bottom: 10px;
+  }
+
   .advantagesTextWrp {
     height: 600px;
   }

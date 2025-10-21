@@ -71,3 +71,36 @@ function startThumbnail() {
 }
 
 startThumbnail()
+
+
+document.querySelectorAll('.cardPriceBox').forEach(card => {
+  const newPriceElem = card.querySelector('.cardNewPrice');
+  const oldPriceElem = card.querySelector('.cardOldPrice');
+  const discountElem = card.querySelector('.cardDiscount');
+
+  if (newPriceElem && oldPriceElem && discountElem) {
+    const newPrice = parseFloat(newPriceElem.textContent.replace(/\s|₽/g, ''));
+    const oldPrice = parseFloat(oldPriceElem.textContent.replace(/\s|₽/g, ''));
+
+    if (oldPrice > newPrice) {
+      const discount = Math.round(((oldPrice - newPrice) / oldPrice) * 100);
+      discountElem.textContent = `-${discount}%`;
+    } else {
+      discountElem.textContent = '';
+    }
+  }
+});
+
+
+function closePayedInfoInit() {
+  const cardPayedInfoBtn = document.querySelector('.cardPayedInfoBtn');
+  const payText = document.querySelector('.payText');
+
+  if (!cardPayedInfoBtn || !payText) return;
+
+  cardPayedInfoBtn.addEventListener('click', () => {
+    payText.classList.toggle('hide');
+  });
+}
+
+closePayedInfoInit();
