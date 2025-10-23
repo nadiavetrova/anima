@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 button {
@@ -68,7 +68,7 @@ html {
 
 .naturalStoneTitleBox,
 .advantagesTitleBox {
-  padding: 50px 0 30px 0;
+  padding: 10px 0 0px 0;
 }
 
 /* Тестовые стили (you can delte this) */
@@ -622,7 +622,7 @@ html {
   gap: 40px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  margin: 150px 0;
+  margin: 15px 0;
 }
 
 .card {
@@ -857,16 +857,16 @@ html {
 /* _______________questionSection____________ */
 
 .questionSection {
+  display: flex;
   height: 367px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 34%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.5) 77%, rgba(0, 0, 0, 0.2) 91%, rgba(0, 0, 0, 0)), url(../img/footer.jpg);
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.question {
-  padding: 70px 0;
-}
 
 .submitInfoWrp {
   display: flex;
@@ -969,7 +969,7 @@ html {
   border-radius: 50px;
   text-align: center;
   padding-top: 12px;
-  transform: translate(-40%, 10%);
+  transform: translate(-20%, -25%);
 }
 
 /* ___________card_____________ */
@@ -990,7 +990,6 @@ html {
 .model {
   font-size: 16px;
   font-weight: 500;
-  line-height: 12px;
 }
 
 .article span,
@@ -1017,7 +1016,7 @@ html {
 /* ___________cardInfoMain_________ */
 
 .cardInfoMain {
-  padding: 50px 0;
+  padding: 10px 0;
 }
 
 .cardPriceBox {
@@ -1046,6 +1045,7 @@ html {
 }
 
 .withTax {
+  margin: 0;
   font-size: 12px;
   color: #9C9C9C;
   font-weight: 500;
@@ -1065,7 +1065,6 @@ html {
 }
 
 .quantityDoodsText {
-  padding-top: 15px;
   font-size: 17px;
   font-weight: 400;
 }
@@ -1090,7 +1089,7 @@ html {
 }
 
 .descriptionWrp {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .descriptionWrp div:nth-child(even) {
@@ -1100,7 +1099,6 @@ html {
 .descriptionBox {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .descriptionTitle {
@@ -1113,15 +1111,19 @@ html {
 .descriptionText {
   font-size: 13px;
   font-weight: 400;
-  line-height: 47px;
 }
 
 .application,
 .consultation {
   font-size: 14px;
-  padding: 10px 30px;
+  width: 45%;
+  height: 50px;
   font-weight: 500;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .application {
@@ -1131,8 +1133,33 @@ html {
 .cardBtns {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+.descriptionText {
+  max-height: 80px;
+  /* ограничиваем высоту */
+  overflow-y: auto;
+  /* добавляем вертикальную прокрутку */
+  scrollbar-width: thin;
+  /* тонкий скролл для Firefox */
+  margin-bottom: 10px;
+}
+
+/* Красивый скролл для Chrome, Edge, Safari */
+.descriptionText::-webkit-scrollbar {
+  width: 6px;
+}
+
+.descriptionText::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.descriptionText::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
 }
 
 /* _____________cardSubTitleSection_________ */
@@ -1195,7 +1222,7 @@ html {
 .headerMenuCard.active {
   display: block;
   position: absolute;
-  top: 150px;
+  top: 129px;
   right: 0;
   width: 100%;
   background: #28553fe4;
@@ -1205,8 +1232,14 @@ html {
 }
 
 /* ________image-viewer________ */
+
 .image-viewer {
   text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .thumbnails {
@@ -1297,7 +1330,7 @@ html {
 }
 
 .sortBox {
-  padding-top: 10px;
+  padding: 10px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -1469,6 +1502,9 @@ html {
 }
 
 @media (max-width: 990px) {
+  .cardPriceBox {
+    gap: 5px;
+  }
 
   .inputName,
   .inputTel {
@@ -1531,10 +1567,6 @@ html {
     height: 50px;
   }
 
-  .question {
-    padding: 40px 0;
-  }
-
   .questionTitle {
     font-size: 22px;
     line-height: 30px;
@@ -1586,6 +1618,14 @@ html {
 }
 
 @media (max-width: 768px) {
+  .cardSliderSection {
+    padding: 20px 0;
+  }
+
+  .cardPriceBox {
+    gap: 50px;
+  }
+
   .ideasSection {
     padding: 10px 0 40px 0;
   }
@@ -1593,6 +1633,7 @@ html {
   .naturalStoneTitleBox,
   .advantagesTitleBox {
     padding: 20px 0 0px 0;
+    gap: 10px;
   }
 
   .paginationLine {
@@ -1609,17 +1650,12 @@ html {
     height: 95%;
   }
 
-  .logo {
-    margin-top: 25px;
-    width: 30%;
-  }
-
   .menuToggle {
     margin-top: 37px;
   }
 
   .backUp {
-    transform: translate(-8%, 3%);
+    transform: translate(-10%, -30%);
   }
 
   .submitInfoWrp {
@@ -1808,6 +1844,9 @@ html {
 }
 
 @media (max-width: 500px) {
+  .cards {
+    margin: 10px 0;
+  }
 
   .question {
     padding-top: 30px;
@@ -1851,7 +1890,7 @@ html {
   }
 
   .title {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .advantagesTextWrp {
@@ -1877,6 +1916,10 @@ html {
   .logo {
     width: 40%;
     margin-top: 0px;
+  }
+
+  .headerMenuCard.active {
+    top: 115px;
   }
 
   .logoToggleBox {
@@ -1957,6 +2000,10 @@ html {
 }
 
 @media (max-width: 450px) {
+  .headerMenuCard.active {
+    top: 108px;
+  }
+
   .cardSliderSection {
     padding: 10px 0;
   }
@@ -2009,6 +2056,10 @@ html {
 }
 
 @media (max-width: 370px) {
+  .headerMenuCard.active {
+    top: 90px;
+  }
+
   .questionTitle {
     font-size: 16px;
     line-height: 22px;
