@@ -1,49 +1,7 @@
-
-// function startFilterMenu() {
-//   const filterTitle = document.querySelectorAll('.filter-title');
-//   const filterList = document.querySelectorAll('.filter-list');
-
-//   filterTitle.forEach((title, index) => {
-//     title.addEventListener("click", function () {
-
-//       filterList[index].classList.toggle("openfilterList");
-//     });
-//   });
-// }
-// startFilterMenu()
-
-
-function startSortQuantity() {
-  const quantity = document.querySelector('.quantity');
-  const sortListQuantity = document.querySelector('.sortListQuantity');
-  const sortBtn = document.querySelector('.sortBtn');
-  const sortListPrice = document.querySelector('.sortListPrice');
-  const sortPrice = document.querySelector('.sortPrice')
-  const sortPriceBtn = document.querySelector('.sortPriceBtn')
-
-
-  sortBtn.addEventListener('click', function () {
-    openChoose(sortListQuantity, quantity);
-  });
-
-  sortPriceBtn.addEventListener('click', function () {
-    openChoose(sortListPrice, sortPrice);
-  });
-
-  function openChoose(btn, sortText) {
-    btn.classList.toggle('hide')
-    sortText.textContent = '';
-    btn.addEventListener('click', function (e) {
-      console.log(e.target);
-      sortText.textContent = e.target.textContent;
-      btn.classList.add('hide')
-    })
-  }
-}
-
-startSortQuantity();
+// сортировка по колиеству показываемых карточек товара и по ыозростанию убыванию цены
 
 function catalogSortInit() {
+  const sortPriceBtn = document.querySelector('.sortPriceBtn');
   const sortPrice = document.querySelector('.sortPrice');
   const sortList = document.querySelector('.sortListPrice');
   const quantityBox = document.querySelector('.quantity');
@@ -52,6 +10,7 @@ function catalogSortInit() {
   const cardsContainer = document.querySelector('.catalogCards');
   const showMoreBtn = document.querySelector('.showMoreCardsBTN');
   let cards = Array.from(cardsContainer.querySelectorAll('.card'));
+  const sortBtn = document.querySelector('.sortBtn');
 
   // === Получаем сохранённые настройки ===
   let savedSortType = localStorage.getItem('sortType') || 'По возрастанию цены';
@@ -63,7 +22,7 @@ function catalogSortInit() {
   let currentNum = savedQuantity;
 
   // === СОРТИРОВКА ПО ЦЕНЕ ===
-  sortPrice.addEventListener('click', () => {
+  sortPriceBtn.addEventListener('click', () => {
     sortList.classList.toggle('hide');
   });
 
@@ -82,7 +41,7 @@ function catalogSortInit() {
   });
 
   // === СОРТИРОВКА ПО КОЛИЧЕСТВУ ===
-  quantityBox.addEventListener('click', () => {
+  sortBtn.addEventListener('click', () => {
     sortListQuantity.classList.toggle('hide');
   });
 
@@ -131,3 +90,6 @@ function catalogSortInit() {
 }
 
 catalogSortInit();
+
+
+// сортировка по виду камня, изделию, месторождения, цвету

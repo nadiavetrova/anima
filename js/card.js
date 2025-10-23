@@ -53,7 +53,6 @@ function startCounter() {
 
   console.log(myCounter);
 }
-
 startCounter()
 
 function startThumbnail() {
@@ -69,10 +68,9 @@ function startThumbnail() {
   });
 
 }
-
 startThumbnail()
 
-
+// высчитать процент скидки акционного товара
 document.querySelectorAll('.cardPriceBox').forEach(card => {
   const newPriceElem = card.querySelector('.cardNewPrice');
   const oldPriceElem = card.querySelector('.cardOldPrice');
@@ -91,7 +89,7 @@ document.querySelectorAll('.cardPriceBox').forEach(card => {
   }
 });
 
-
+// свернуть информацию об оплате
 function closePayedInfoInit() {
   const cardPayedInfoBtn = document.querySelector('.cardPayedInfoBtn');
   const payText = document.querySelector('.payText');

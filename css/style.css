@@ -68,7 +68,7 @@ html {
 
 .naturalStoneTitleBox,
 .advantagesTitleBox {
-  padding: 10px 0 0px 0;
+  padding: 40px 0 40px 0;
 }
 
 /* Тестовые стили (you can delte this) */
@@ -429,17 +429,16 @@ html {
 
 .advantagesImg {
   width: 100%;
-  height: 80%;
+  height: 70%;
   object-fit: cover;
 }
 
 
 .advantagesTextWrp {
   display: flex;
-  align-items: stretch;
   flex-direction: column;
-  height: 800px;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 .secondWrp {
@@ -447,7 +446,11 @@ html {
 }
 
 .advantagesTextBox {
-  flex: 1;
+  /* flex: 1; */
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .advantagesTitleBox {
@@ -532,13 +535,13 @@ html {
 }
 
 .info-first {
-  bottom: 0;
-  left: 0;
+  bottom: 2px;
+  left: 1px;
 }
 
 .info-second {
-  bottom: 0;
-  right: 0;
+  bottom: 2px;
+  right: 1px;
 }
 
 .naturalStoneTitleLine {
@@ -1137,7 +1140,7 @@ html {
   gap: 10px;
 }
 
-
+.advantagesTextMore.activeTabs,
 .descriptionText {
   max-height: 80px;
   /* ограничиваем высоту */
@@ -1325,18 +1328,33 @@ html {
 
 /* _________________catalog___________
  */
-.catalogSortSection {
-  border: 1px solid #E5E5E5;
-}
-
 .sortBox {
+  position: relative;
   padding: 10px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   font-size: 16px;
   font-weight: 400;
+  cursor: pointer;
 }
+
+
+.sortListQuantity,
+.sortListPrice {
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(8%, -50%);
+  cursor: pointer;
+}
+
+.catalogSortSection {
+  border: 1px solid #E5E5E5;
+}
+
+
 
 .grey {
   color: #9C9C9C;
@@ -1396,9 +1414,7 @@ html {
   content: "";
   display: inline-block;
   width: 12px;
-  /* Укажите ширину иконки */
   height: 12px;
-  /* Укажите высоту иконки */
   background-image: url('../icon/filter-sublist.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -1454,24 +1470,6 @@ html {
   margin-left: 10px;
 }
 
-@media (max-width: 768px) {
-  .catalogCards {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    gap: 40px;
-  }
-
-  .filter-menu {
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 500px) {
-  .catalogCards {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
-}
 
 .hide {
   display: none;
@@ -1486,12 +1484,9 @@ html {
   background: #28553fe4;
   text-align: center;
   z-index: 99;
+  height: 100%;
 }
 
-
-.hide {
-  display: none;
-}
 
 /* _________________adaptive__________
  */
@@ -1502,6 +1497,27 @@ html {
 }
 
 @media (max-width: 990px) {
+
+  .filter-title,
+  .filter-subtitle {
+    line-height: 45px;
+  }
+
+  .catalogCards {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 40px;
+  }
+
+  .filter-menu {
+    margin-bottom: 30px;
+  }
+
+  .naturalStoneTitleBox,
+  .advantagesTitleBox {
+    padding: 10px 0;
+  }
+
   .cardPriceBox {
     gap: 5px;
   }
@@ -1618,6 +1634,14 @@ html {
 }
 
 @media (max-width: 768px) {
+  .advantagesTitle {
+    margin-bottom: 20px;
+  }
+
+  .naturalStoneTitle {
+    padding: 10px 0;
+  }
+
   .cardSliderSection {
     padding: 20px 0;
   }
@@ -1837,13 +1861,18 @@ html {
   .slideInfo {
     max-width: 395px;
   }
-
-  .menuList {
-    padding: 65px 0;
-  }
 }
 
 @media (max-width: 500px) {
+  .headerMenuCatalog.active {
+    top: 110px;
+  }
+
+  .catalogCards {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
   .cards {
     margin: 10px 0;
   }
@@ -1891,16 +1920,6 @@ html {
 
   .title {
     font-size: 20px;
-  }
-
-  .advantagesTextWrp {
-    height: 645px;
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    /* скрыть всё, что выходит за границы */
-    text-overflow: ellipsis;
-    /* добавить троеточие (…) */
   }
 
   .positionInfo {
@@ -1993,10 +2012,6 @@ html {
   .headerContacts {
     justify-content: space-around;
   }
-
-  .menuList {
-    padding: 27px 0;
-  }
 }
 
 @media (max-width: 450px) {
@@ -2043,10 +2058,6 @@ html {
     padding-bottom: 10px;
   }
 
-  .advantagesTextWrp {
-    height: 600px;
-  }
-
   .infoNumber {
     width: 36px;
     height: 36px;
@@ -2056,6 +2067,10 @@ html {
 }
 
 @media (max-width: 370px) {
+  .headerMenuCatalog.active {
+    top: 89px;
+  }
+
   .headerMenuCard.active {
     top: 90px;
   }
@@ -2105,7 +2120,7 @@ html {
 
   .menuList {
     padding: 2px 0;
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 
@@ -2116,10 +2131,6 @@ html {
 
   .advantagesText {
     font-size: 14px;
-  }
-
-  .advantagesTextWrp {
-    height: 600px;
   }
 
   .title {
