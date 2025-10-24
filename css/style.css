@@ -4,7 +4,7 @@ h3,
 h4,
 h5,
 p {
-  margin: 0;
+  /* margin-top: 0; */
 }
 
 button {
@@ -205,6 +205,7 @@ html {
   background-color: #080808;
   text-transform: uppercase;
   margin-top: -1px;
+  position: relative;
 }
 
 .slider-line {
@@ -253,14 +254,11 @@ html {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  box-shadow: 0 0 33px 9px #ffffff08;
+  box-shadow: 0 0 33px 9px #19171708;
   z-index: 3;
-  padding: 4vw 5vw;
-  /* адаптивные отступы */
-  max-width: 700px;
-  /* чтобы текст не растягивался на весь экран */
+  padding: 3vw 4vw;
+  max-width: 600px;
   width: 100%;
-  /* растягивается внутри контейнера */
   box-sizing: border-box;
   height: auto;
 }
@@ -291,7 +289,7 @@ html {
 .slideBtns {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .promoBtn,
@@ -320,6 +318,7 @@ html {
 
 .carousel-btn {
   position: absolute;
+  bottom: 0;
   border: 0.5px solid #e6e3e3;
   text-align: center;
   box-shadow: 0 0 33px 9px #FFFFFF08;
@@ -338,16 +337,15 @@ html {
   z-index: 5;
   bottom: 0;
   left: 0;
-
 }
 
 .carousel-btn-next {
-  transform: translate(240%, -50%);
+  transform: translate(240%, -150%);
 }
 
 
 .carousel-btn-prev {
-  transform: translate(120%, -50%);
+  transform: translate(100%, -150%);
 }
 
 .btn-next,
@@ -355,10 +353,7 @@ html {
   margin-top: 5px;
 }
 
-.btn-next img,
-.btn-prev img {
-  padding: 9px;
-}
+
 
 /* __________________advantages______________ */
 
@@ -865,11 +860,10 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 34%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.5) 77%, rgba(0, 0, 0, 0.2) 91%, rgba(0, 0, 0, 0)), url(../img/footer.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 34%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.2) 91%, rgba(0, 0, 0, 0)), url(../img/footer.jpg);
   align-items: center;
   flex-wrap: wrap;
 }
-
 
 .submitInfoWrp {
   display: flex;
@@ -1560,14 +1554,6 @@ html {
     max-width: 600px;
   }
 
-  .carousel-btn-prev {
-    transform: translate(120%, 0);
-  }
-
-  .carousel-btn-next {
-    transform: translate(240%, 0%);
-  }
-
   .line {
     width: 67%;
     transform: translate(-34%, 0%);
@@ -1610,6 +1596,10 @@ html {
 
 @media (max-width: 811px) {
   .slideInfo {
+    transform: translateY(-55%);
+  }
+
+  .slideInfo {
     max-width: 450px;
   }
 
@@ -1634,6 +1624,10 @@ html {
 }
 
 @media (max-width: 768px) {
+  .slideInfo {
+    transform: translateY(-60%);
+  }
+
   .advantagesTitle {
     margin-bottom: 20px;
   }
@@ -1778,41 +1772,16 @@ html {
     display: none;
   }
 
-  .carousel-btn-next,
-  .carousel-btn-prev {
-    width: 30px;
-    height: 30px;
-    background-color: #000;
-    border: none;
-  }
-
   .square {
     display: none;
   }
 
-  .btn-next img,
-  .btn-prev img {
-    padding: 2px;
-  }
 
-  .btn-next,
-  .btn-prev {
-    margin-top: 1px;
-  }
-
-  .carousel-btn-next {
-    left: 93%;
-    transform: translate(0%, 10%);
-  }
 
   .slideText::after {
     width: 30%;
     height: 0.1px;
     margin: -6px 80px;
-  }
-
-  .carousel-btn-prev {
-    transform: translate(0%, 10%);
   }
 
   .title {
@@ -1830,15 +1799,19 @@ html {
   }
 
   .advantagesText {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .advantagesTextMore {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 630px) {
+  .slideInfo {
+    transform: translateY(-65%);
+  }
+
   .positionInfo {
     font-size: 18px;
   }
@@ -1864,6 +1837,13 @@ html {
 }
 
 @media (max-width: 500px) {
+
+  .carousel-btn-next,
+  .carousel-btn-prev {
+    width: 35px;
+    height: 35px;
+  }
+
   .headerMenuCatalog.active {
     top: 110px;
   }
@@ -1986,13 +1966,6 @@ html {
     max-width: 225px;
   }
 
-
-  .carousel-btn-next,
-  .carousel-btn-prev {
-    width: 20px;
-    height: 20px;
-  }
-
   .btn-next img,
   .btn-prev img {
     height: 15px;
@@ -2000,13 +1973,12 @@ html {
     width: 15px;
   }
 
-  .carousel-btn-next {
-    left: 93%;
-    transform: translate(0%, -35%);
+  .carousel-btn-prev {
+    transform: translate(100%, -100%);
   }
 
-  .carousel-btn-prev {
-    transform: translate(0%, -5%);
+  .carousel-btn-next {
+    transform: translate(240%, -100%);
   }
 
   .headerContacts {
@@ -2032,7 +2004,7 @@ html {
   }
 
   .withTax {
-    line-height: 1px;
+    line-height: 18px;
   }
 
   .cardInfoMain {
@@ -2042,7 +2014,7 @@ html {
   .article,
   .model {
     font-size: 12px;
-    line-height: 3px;
+    line-height: 16px;
   }
 
   .showMoreCardsBTN::after {

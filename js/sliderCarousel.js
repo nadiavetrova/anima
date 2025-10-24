@@ -2,6 +2,8 @@ function startSlider(initSlideNumber) {
   const slider = document.querySelector('.slider');
   const sliderLine = document.querySelector('.slider-line');
   const slides = document.querySelectorAll('.slide');
+  const btnPrev = document.querySelector('.btn-prev');
+  const btnNext = document.querySelector('.btn-next');
 
   const store = {
     width: slider.offsetWidth,
@@ -24,27 +26,23 @@ function startSlider(initSlideNumber) {
     moveSlide();
   }
 
-  function handleClick(event) {
-    const btn = event.target.closest('img');
-    if (!btn) return;
-
-    const isPrevBtn = btn.classList.contains('imgPrev');
-    const isNextBtn = btn.classList.contains('imgNext');
-
-    if (isPrevBtn && store.currentSlide > 1) {
+  // обработка кнопок
+  btnPrev.addEventListener('click', () => {
+    if (store.currentSlide > 1) {
       store.currentSlide--;
+      moveSlide();
     }
+  });
 
-    if (isNextBtn && store.currentSlide < store.maxSliderNumber) {
+  btnNext.addEventListener('click', () => {
+    if (store.currentSlide < store.maxSliderNumber) {
       store.currentSlide++;
+      moveSlide();
     }
+  });
 
-    moveSlide();
-  }
-
-  slider.addEventListener('click', handleClick);
   window.addEventListener('resize', sliderInit);
   sliderInit();
 }
 
-startSlider(3);
+startSlider(1);
