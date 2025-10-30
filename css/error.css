@@ -12,19 +12,31 @@
 }
 
 .errorBtn {
+  color: #fff;
   font-size: 19px;
-  font-weight: 500;
-  padding: 20px 50px;
+  font-weight: bold;
+  padding: 20px 60px;
   text-transform: uppercase;
 }
 
 .headerMenuError.active {
   display: block;
   position: absolute;
-  top: 150px;
   right: 0;
   width: 100%;
-  background: #28553fe4;
+  background: #28553ff4;
   text-align: center;
   z-index: 99;
+  height: 100%;
+}
+
+@media (max-width: 450px) {
+  .errorText {
+    font-size: 16px;
+  }
+
+  .errorBtn {
+    font-size: 15px;
+    padding: 10px 50px;
+  }
 }
